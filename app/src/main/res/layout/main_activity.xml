@@ -15,6 +15,7 @@
         android:fontFamily="sans-serif-condensed"
         android:padding="25dp"
         android:text="Santo Domingo"
+        android:onClick="openSantoDomingoList"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="24sp"
@@ -44,6 +45,7 @@
         android:padding="25dp"
         android:text="Este"
         android:textAlignment="center"
+        android:onClick="openEsteList"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         android:textStyle="bold"/>
@@ -57,6 +59,7 @@
         android:text="Sur"
         android:textAlignment="center"
         android:textColor="@android:color/white"
+        android:onClick="openSurList"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -65,6 +68,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/holo_red_light"
+        android:onClick="openMapaList"
         android:padding="25dp"
         android:text="@string/mapa"
         android:textAlignment="center"
