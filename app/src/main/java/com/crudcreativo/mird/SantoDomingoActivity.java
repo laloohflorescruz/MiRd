@@ -1,13 +1,13 @@
 package com.crudcreativo.mird;
 
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
-public class SDActivity extends AppCompatActivity {
+public class SantoDomingoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sd_list);
+        setContentView(R.layout.activity_santo_domingo);
     }
 }

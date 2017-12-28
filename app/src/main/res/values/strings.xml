@@ -2,4 +2,9 @@
     <string name="app_name">MiRD</string>
     <string name="mapa">Mapa</string>
     <string name="title_activity_main2">MainActivity</string>
+    <string name="title_activity_santo_domingo">Gran Santo Domingo</string>
+    <string name="title_activity_cibao">Zona Cibao</string>
+    <string name="title_activity_este">Zona Este</string>
+    <string name="title_activity_sur">Zona Sur</string>
+    <string name="title_activity_mapa">Mapa</string>
 </resources>
