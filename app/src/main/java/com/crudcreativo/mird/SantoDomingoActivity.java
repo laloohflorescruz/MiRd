@@ -2,9 +2,8 @@ package com.crudcreativo.mird;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -15,30 +14,21 @@ public class SantoDomingoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_santo_domingo);
 
-        ArrayList<String> santodomingo = new ArrayList<String>();
+        ArrayList<SantoDomingo> santodomingo = new ArrayList<SantoDomingo>();
+        santodomingo.add(new SantoDomingo("Faro a Colon"));
+        santodomingo.add(new SantoDomingo("Zoologico Dominicano"));
+        santodomingo.add(new SantoDomingo("Alcazar de Colon"));
+        santodomingo.add(new SantoDomingo("Puerta del Conde"));
+        santodomingo.add(new SantoDomingo("Puerta de la Misericordia"));
+        santodomingo.add(new SantoDomingo("Altar de la Patria"));
+        santodomingo.add(new SantoDomingo("Panteon Nacional"));
+        santodomingo.add(new SantoDomingo("Fortaleza Ozama"));
+        santodomingo.add(new SantoDomingo("Parque Colon"));
+        santodomingo.add(new SantoDomingo("Acuario Nacional"));
+        santodomingo.add(new SantoDomingo("Jardin Botanico"));
 
-        santodomingo.add("Faro a Colon");
-        santodomingo.add("Zoologico Dominicano");
-        santodomingo.add("Alcazar de Colon");
-        santodomingo.add("Puerta del Conde");
-        santodomingo.add("Puerta de la Misericordia");
-        santodomingo.add("Altar de la Patria");
-        santodomingo.add("Panteon Nacional");
-        santodomingo.add("Fortaleza Ozama");
-        santodomingo.add("Parque Colon");
-        santodomingo.add("Acuario Nacional");
-        santodomingo.add("Jardin Botanico");
-
-        LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
-
-        int index =0;
-        while(index<santodomingo.size())
-        {
-            TextView santoDomingoView = new TextView(this);
-            santoDomingoView.setText(santodomingo.get(index));
-            rootView.addView(santoDomingoView);
-
-            index++;
-        }
+        SantoDomingoAdapter itemsAdapter = new SantoDomingoAdapter(this, santodomingo);
+        ListView listView = (ListView) findViewById(R.id.listview_santoDomingo);
+        listView.setAdapter(itemsAdapter);
     }
 }
