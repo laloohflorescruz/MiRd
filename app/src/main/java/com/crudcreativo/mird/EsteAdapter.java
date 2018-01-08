@@ -1,6 +1,4 @@
 package com.crudcreativo.mird;
-
-
 import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,16 +6,15 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-
 import java.util.ArrayList;
-
 /**
- * Created by Eduardo Flores on 2/1/2018.
+ * Created by Eduardo Flores on 7/1/2018.
  */
-public class SantoDomingoAdapter extends ArrayAdapter<SantoDomingo> {
 
-    public SantoDomingoAdapter(Activity context, ArrayList<SantoDomingo> santoDomingos) {
-        super(context, 0, santoDomingos);
+public class EsteAdapter extends ArrayAdapter<Este> {
+
+    public EsteAdapter(Activity context, ArrayList<Este> estes) {
+        super(context, 0, estes);
     }
 
     @Override
@@ -26,13 +23,13 @@ public class SantoDomingoAdapter extends ArrayAdapter<SantoDomingo> {
         View listItemView = convertView;
         if(listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.list_item_sd, parent, false);
+                    R.layout.list_item_este, parent, false);
         }
 
-        SantoDomingo currentSantoDomingo= getItem(position);
+        Este currentEste = getItem(position);
 
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.site_name);
-        nameTextView.setText(currentSantoDomingo.getSite());
+        nameTextView.setText(currentEste.getSite());
 
         return listItemView;
     }

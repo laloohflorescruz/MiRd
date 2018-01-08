@@ -16,16 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SantoDomingoActivity"
-            android:label="@string/title_activity_santo_domingo"/>
-        <activity android:name=".CibaoActivity"
-            android:label="@string/title_activity_cibao"/>
-        <activity android:name=".EsteActivity"
-            android:label="@string/title_activity_este"/>
-        <activity android:name=".SurActivity"
-            android:label="@string/title_activity_sur"/>
-        <activity android:name=".MapaActivity"
-            android:label="@string/title_activity_mapa"></activity>
+        <activity
+            android:name=".SantoDomingoActivity"
+            android:label="@string/title_activity_santo_domingo" />
+        <activity
+            android:name=".CibaoActivity"
+            android:label="@string/title_activity_cibao" />
+        <activity
+            android:name=".EsteActivity"
+            android:label="@string/title_activity_este" />
+        <activity
+            android:name=".SurActivity"
+            android:label="@string/title_activity_sur" />
+        <activity
+            android:name=".MapaActivity"
+            android:label="@string/title_activity_mapa" />
+        <activity android:name=".Main2Activity"></activity>
     </application>
 
 </manifest>
