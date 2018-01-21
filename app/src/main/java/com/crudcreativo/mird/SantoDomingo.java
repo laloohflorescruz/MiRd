@@ -7,13 +7,18 @@ package com.crudcreativo.mird;
 public class SantoDomingo {
 
     private String mSite;
+    private int mImageResourceId;
 
-    public SantoDomingo(String vSite)
+
+    public SantoDomingo(String vSite, int vFoto)
     {
         mSite= vSite;
+        mImageResourceId= vFoto;
     }
 
     public String getSite(){ return mSite; }
+
+    public int getmImageResourceId(){ return mImageResourceId; }
 }
 
 
