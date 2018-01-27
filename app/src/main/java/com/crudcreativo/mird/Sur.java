@@ -8,13 +8,19 @@ public class Sur {
 
 
     private String mSite;
+    private int mImageResourceId;
 
-    public Sur(String vSite)
+
+    public Sur(String vSite, int vFoto)
     {
         mSite= vSite;
+        mImageResourceId= vFoto;
+
     }
 
     public String getSite(){ return mSite; }
+    public int getmImageResourceId(){ return mImageResourceId; }
+
 }
 
 

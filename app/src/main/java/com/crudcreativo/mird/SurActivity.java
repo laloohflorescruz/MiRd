@@ -17,16 +17,13 @@ public class SurActivity extends AppCompatActivity {
 
 
         ArrayList<Sur> sur = new ArrayList<Sur>();
-        sur.add(new Sur("Cuevas del Pomier"));
-        sur.add(new Sur("Polo de Barahona"));
-        sur.add(new Sur("Dunas de Bani"));
-        sur.add(new Sur("Laguna de Oviedo"));
-        sur.add(new Sur("Bahia de Las Aguilas"));
-        sur.add(new Sur("Lago Enriquillo"));
-        sur.add(new Sur("Balneario La Zurza"));
-        sur.add(new Sur("Hoyo de Pelempito"));
-        sur.add(new Sur("Isla Cabritos"));
-        sur.add(new Sur("Bahia de Ocoa"));
+        sur.add(new Sur("Cuevas del Pomier", R.drawable.cueva_pomier));
+        sur.add(new Sur("Dunas de Bani", R.drawable.dunas_bani));
+        sur.add(new Sur("Laguna de Oviedo", R.drawable.laguna_oviedo));
+        sur.add(new Sur("Bahia de Las Aguilas", R.drawable.bahia_aguilas));
+        sur.add(new Sur("Lago Enriquillo", R.drawable.lago_enriquillo));
+        sur.add(new Sur("Balneario La Zurza", R.drawable.lazurza));
+        sur.add(new Sur("Hoyo de Pelempito", R.drawable.pelempito));
 
         SurAdapter itemAdapter = new SurAdapter(this, sur);
         ListView listView = (ListView) findViewById(R.id.listview_sur);
