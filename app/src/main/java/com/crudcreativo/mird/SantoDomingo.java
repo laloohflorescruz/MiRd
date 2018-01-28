@@ -18,7 +18,9 @@ public class SantoDomingo {
 
     public String getSite(){ return mSite; }
 
-    public int getmImageResourceId(){ return mImageResourceId; }
+    public int getImageResourceId(){
+        return mImageResourceId;
+    }
 }
 
 

@@ -5,8 +5,6 @@ package com.crudcreativo.mird;
  */
 
 public class Sur {
-
-
     private String mSite;
     private int mImageResourceId;
 
@@ -15,11 +13,13 @@ public class Sur {
     {
         mSite= vSite;
         mImageResourceId= vFoto;
-
     }
 
     public String getSite(){ return mSite; }
-    public int getmImageResourceId(){ return mImageResourceId; }
+
+    public int getImageResourceId(){
+        return mImageResourceId;
+    }
 
 }
 

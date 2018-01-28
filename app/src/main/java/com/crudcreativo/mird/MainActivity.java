@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.main_activity);
 
-        TextView santoDomingo = (TextView)findViewById(R.id.tvSD);
-        santoDomingo.setOnClickListener(new OnClickListener()
+        TextView sd = (TextView)findViewById(R.id.tvSD);
+        sd.setOnClickListener(new OnClickListener()
         {
             @Override
             public void onClick(View view) {

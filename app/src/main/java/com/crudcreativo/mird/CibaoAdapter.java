@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -25,13 +26,16 @@ public class CibaoAdapter extends ArrayAdapter<Cibao> {
         View listItemView = convertView;
         if(listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.list_item_sd, parent, false);
+                    R.layout.list_item_cibao, parent, false);
         }
 
         Cibao currentCibao= getItem(position);
 
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.site_name);
         nameTextView.setText(currentCibao.getSite());
+
+        ImageView iconView = (ImageView) listItemView.findViewById(R.id.list_item_image);
+        iconView.setImageResource(currentCibao.getImageResourceId());
 
         return listItemView;
     }
